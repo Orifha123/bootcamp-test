@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+</head>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- the function to be tested -->
+    <script src="greet.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="tests/greet.tests.js" charset="utf-8"></script>
+
+    <script src="registration.js" charset="utf-8"></script>
+
+    <script src="tests/registration.test.js" charset="utf-8"></script>
+    <script src="registration.js" charset="utf-8"></script>
+    <script src="tests/CapeTown registration number.js" charset="utf-8"></script>
+    <script src="gauteng.js" charset="utf-8"></script>
+    <script src="tests/gauteng number plates.js" charset="utf-8"></script>
+    <script src="limpopo.js" charset="utf-8"></script>
+    <script src="tests/limpopo reg number.js" charset="utf-8"></script>
+    <script src="parameter.js" charset="utf-8"></script>
+    <script src="tests/more parameteres.js" charset="utf-8"></script>
+    <script src="check many.js" charset="utf-8"></script>
+    <script src="tests/one function that check many.js" charset="utf-8"></script>
+    <script src="from a string.js" charset="utf-8"></script>
+    <script src="tests/from a string to a list.js" charset="utf-8"></script>
+    <script src="is a day.js" charset="utf-8"></script>
+    <script src="tests/is a day.js" charset="utf-8"></script>
+    <script src="is a weekday.js" charset="utf-8"></script>
+    <script src="tests/more parameteres.js" charset="utf-8"></script>
+    
+    
+    
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+
+</body>
+
+</html>
