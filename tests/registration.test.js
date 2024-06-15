@@ -1,8 +1,11 @@
 describe('function isFromBellville' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
+    it('should number plate from Bellville' , function(){
+        assert.equal(isFromBellville('CY 123'), true);
+    })
 
-        assert.deepEqual([2,2],[2,2]);
+    it('should number plate that are not from Bellville' , function(){
+        assert.equal(isFromBellville('CJ 123'), false);
+
     });
 
 });

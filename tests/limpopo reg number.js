@@ -1,8 +1,10 @@
 describe('limpopo reg number' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
+    it('should show limpopo registration number' , function(){
+        assert.equal(isFromLimpopo('KTR 990 L'), true);
+    })
+    it('should show registration number that are not from limpopo' , function(){
 
-        assert.deepEqual([2,2],[2,2]);
+        assert.equal(isFromLimpopo('W 990 N'), false);
     });
 
 });

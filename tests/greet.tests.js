@@ -1,10 +1,11 @@
 // console.log(greet)
 
 describe('Greeting' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+    it(' its greeting sam' , function(){
+        assert.equal(greet('Sam'), 'Hello, Sam');   
+    });
+    it(' its greeting Bob' , function(){
+    assert.equal(greet('Bob'), 'Hello, Bob');
     });
 
 });

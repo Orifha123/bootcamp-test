@@ -1,8 +1,11 @@
 describe('CapeTown registration number' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
+    it('it should shows capetown plate number' , function(){
+        assert.equal(isFromCapeTown('CA 123 908'), true);
+    })
 
-        assert.deepEqual([2,2],[2,2]);
+    it('it should shows non capetown plate number' , function(){
+
+        assert.equal(isFromCapeTown('CJ 123 908'), false);
     });
 
 });
